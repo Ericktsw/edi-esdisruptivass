@@ -63,14 +63,16 @@ const GeoLayersSection = () => {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/geolayers.png"
+                  src="/geolayers.png?v=2"
                   alt="GeoLayers 3 - Edições de Mapas Animados"
                   className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
-                    console.error('Erro ao carregar imagem:', e);
-                    e.currentTarget.style.display = 'none';
+                    console.error('Erro ao carregar imagem geolayers.png (mobile):', e);
+                    console.log('Tentando carregar imagem de:', e.currentTarget.src);
+                    // Não esconder a imagem, apenas logar o erro
                   }}
-                  onLoad={() => console.log('Imagem carregada com sucesso')}
+                  onLoad={() => console.log('Imagem geolayers.png (mobile) carregada com sucesso')}
+                  loading="lazy"
                 />
                 
                 {/* Overlay gradient */}
@@ -164,14 +166,16 @@ const GeoLayersSection = () => {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="/geolayers.png"
+                src="/geolayers.png?v=2"
                 alt="GeoLayers 3 - Edições de Mapas Animados"
                 className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
                 onError={(e) => {
-                  console.error('Erro ao carregar imagem:', e);
-                  e.currentTarget.style.display = 'none';
+                  console.error('Erro ao carregar imagem geolayers.png:', e);
+                  console.log('Tentando carregar imagem de:', e.currentTarget.src);
+                  // Não esconder a imagem, apenas logar o erro
                 }}
-                onLoad={() => console.log('Imagem carregada com sucesso')}
+                onLoad={() => console.log('Imagem geolayers.png carregada com sucesso')}
+                loading="lazy"
               />
               
               {/* Overlay gradient */}
