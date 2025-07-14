@@ -15,7 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/edi-esdisruptivass">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/hero-demo" element={<HeroDemo />} />
