@@ -86,7 +86,7 @@ const PricingSection = () => {
               </div>
             </motion.div>
 
-            <Card className="p-8 h-full gradient-secondary border-primary glow-card transition-smooth relative overflow-hidden">
+            <Card className="p-8 h-full bg-black/10 backdrop-blur-sm border-white/20 transition-smooth relative overflow-hidden">
               
               <motion.div
                 animate={{ 
@@ -94,7 +94,7 @@ const PricingSection = () => {
                   opacity: [0.1, 0.3, 0.1]
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute inset-0 gradient-primary"
+                className="absolute inset-0 bg-white/5"
               />
 
               <div className="relative z-10">
@@ -192,7 +192,7 @@ const PricingSection = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <Card className="p-8 gradient-secondary border-primary/20 max-w-2xl mx-auto">
+          <Card className="p-8 bg-black/10 backdrop-blur-sm border-white/20 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-4 mb-6">
               <motion.div
                 animate={{ rotate: 360 }}
