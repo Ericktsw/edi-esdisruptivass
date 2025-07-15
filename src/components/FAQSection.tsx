@@ -15,7 +15,10 @@ const FAQSection = () => {
       question: "O curso é ao vivo ou gravado?", 
       answer: "Gravado, com acesso vitalício. Você pode assistir no seu ritmo, quantas vezes quiser."
     },
-
+    {
+      question: "Quais são os requisitos técnicos para acompanhar o curso?",
+      answer: "Você pode assistir às aulas em qualquer dispositivo, incluindo celular e tablet. Porém, para aplicar as técnicas ensinadas e criar suas próprias edições, é necessário um computador que execute o Adobe After Effects, que é o software principal utilizado no curso. Recomendamos um PC com pelo menos 8GB de RAM e placa de vídeo dedicada para melhor performance."
+    },
     {
       question: "Tenho acesso vitalício ao curso?",
       answer: "Sim, acesso vitalício com todas as atualizações. Uma vez que você adquire o curso, ele é seu para sempre."

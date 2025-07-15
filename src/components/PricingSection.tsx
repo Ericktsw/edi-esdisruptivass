@@ -23,7 +23,7 @@ const PricingSection = () => {
       { text: "Acesso Vitalício", price: "Incalculável" }
     ],
     bonuses: [
-      { text: "BÔNUS: COMO TER UM CANAL DARK YouTube", price: "" },
+      { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE", price: "" },
       { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE", price: "" }
     ]
   };
@@ -173,7 +173,7 @@ const PricingSection = () => {
                    className="mt-6 text-center"
                  >
                    <p className="text-xs text-muted-foreground mb-2">
-                     Compra 100% segura – 30 dias de garantia
+                     Compra 100% segura – 07 dias de garantia
                    </p>
                    <p className="text-xs text-muted-foreground">
                      Aceita: VISA, Mastercard, Elo, American Express, Boleto
