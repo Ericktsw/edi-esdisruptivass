@@ -69,7 +69,7 @@ export default function Globe3D() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.3, ease: "easeOut" }}
           >
-            {"Aprenda a criar edições de outro nível e descubra como faturar até R$5.000 por mês trabalhando de casa com vídeos que impressionam!".split(" ").map((word, index) => (
+            {"Aprenda a criar edições de outro nível e descubra como faturar trabalhando de casa com vídeos que impressionam!".split(" ").map((word, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0 }}
@@ -94,7 +94,7 @@ export default function Globe3D() {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#como-funciona"
+              href="#curso"
               className="flex w-full items-center justify-center gap-2 text-white/70 transition-colors hover:text-white sm:w-auto"
             >
               <span>Veja como funciona</span>
