@@ -15,7 +15,7 @@ export default function Globe3D() {
     >
       {/* Hacker Misterioso Background */}
       <div 
-        className="absolute inset-0 opacity-60 mix-blend-overlay pointer-events-none"
+        className="absolute inset-0 opacity-80 mix-blend-overlay pointer-events-none"
         style={{
           backgroundImage: `url('/hacker-misterioso.png')`,
           backgroundSize: 'cover',
@@ -50,26 +50,19 @@ export default function Globe3D() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="mb-6 inline-block rounded-full border border-[#9b87f5]/30 px-3 py-1 text-xs text-[#9b87f5]">
-            PRÓXIMA GERAÇÃO DE EDIÇÃO DE VÍDEOS
-          </span>
-          <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-light md:text-5xl lg:text-7xl">
-            {["Edições", "Disruptivas", "que", "Impressionam"].map((word, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: index * 0.2 + 0.5,
-                  ease: "easeOut" 
-                }}
-                className={`inline-block mr-4 ${index === 1 ? 'text-[#9b87f5]' : ''}`}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </h1>
+          {/* Logo Disruptivo como título principal */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="mb-6 flex justify-center"
+          >
+            <img 
+              src="/logo-disruptivo-00000.png" 
+              alt="Edições Disruptivas" 
+              className="w-80 md:w-96 lg:w-[32rem] xl:w-[36rem] object-contain"
+            />
+          </motion.div>
           <motion.p 
             className="mx-auto mb-10 max-w-2xl text-lg text-white/60 md:text-xl"
             initial={{ opacity: 0, y: 30 }}
@@ -93,12 +86,13 @@ export default function Globe3D() {
           </motion.p>
 
           <div className="mb-10 sm:mb-0 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button
-              className="neumorphic-button hover:shadow-[0_0_20px_rgba(155, 135, 245, 0.5)] relative w-full overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-white/10 to-white/5 px-8 py-4 text-white shadow-lg transition-all duration-300 hover:border-[#9b87f5]/30 sm:w-auto group"
+            <a
+              href="#precos"
+              className="neumorphic-button hover:shadow-[0_0_20px_rgba(155, 135, 245, 0.5)] relative w-full overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-white/10 to-white/5 px-8 py-4 text-white shadow-lg transition-all duration-300 hover:border-[#9b87f5]/30 sm:w-auto group inline-flex items-center justify-center"
             >
               COMEÇAR AGORA
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform inline" />
-            </button>
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
             <a
               href="#como-funciona"
               className="flex w-full items-center justify-center gap-2 text-white/70 transition-colors hover:text-white sm:w-auto"

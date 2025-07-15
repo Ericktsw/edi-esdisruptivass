@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, ExternalLink } from "lucide-react";
+import { Play, X } from "lucide-react";
 import { useState } from "react";
 
 const VideoShowcaseSection = () => {
   const [hoveredVideo, setHoveredVideo] = useState<number | null>(null);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   const videos = [
     {
@@ -28,8 +29,12 @@ const VideoShowcaseSection = () => {
     }
   ];
 
-  const handleVideoClick = (url: string) => {
-    window.open(url, '_blank');
+  const handleVideoClick = (videoId: string) => {
+    setSelectedVideo(videoId);
+  };
+
+  const closeModal = () => {
+    setSelectedVideo(null);
   };
 
   return (
@@ -90,7 +95,7 @@ const VideoShowcaseSection = () => {
               className="group cursor-pointer"
               onMouseEnter={() => setHoveredVideo(index)}
               onMouseLeave={() => setHoveredVideo(null)}
-              onClick={() => handleVideoClick(video.url)}
+              onClick={() => handleVideoClick(video.id)}
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gray-800">
                 {/* Thumbnail */}
@@ -122,12 +127,7 @@ const VideoShowcaseSection = () => {
                     </motion.div>
                   </div>
                   
-                  {/* External Link Icon */}
-                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-10 h-10 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center">
-                      <ExternalLink className="w-5 h-5 text-white" />
-                    </div>
-                  </div>
+
                   
                   {/* Duration Badge (simulated) */}
                   <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm rounded px-2 py-1">
@@ -171,11 +171,41 @@ const VideoShowcaseSection = () => {
           <p className="text-gray-300 text-lg mb-6">
             Quer criar vídeos como estes? Aprenda as técnicas que fazem a diferença.
           </p>
-          <button className="bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-700 hover:to-purple-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <a href="#precos" className="bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-700 hover:to-purple-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-block">
             Começar Agora
-          </button>
+          </a>
         </motion.div>
       </div>
+
+      {/* Video Modal */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            className="relative w-full max-w-4xl aspect-video bg-black rounded-lg overflow-hidden"
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/60 hover:bg-black/80 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors duration-200"
+            >
+              <X className="w-6 h-6 text-white" />
+            </button>
+            
+            {/* YouTube Iframe */}
+            <iframe
+              src={`https://www.youtube.com/embed/${selectedVideo}?autoplay=1&rel=0&modestbranding=1`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 };

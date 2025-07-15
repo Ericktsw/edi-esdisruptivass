@@ -61,6 +61,16 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           </motion.span>
         </motion.h1>
         
+        {/* Subtitle */}
+        <motion.p
+          className="text-lg md:text-xl lg:text-2xl font-light text-gray-300 mt-6 max-w-2xl mx-auto px-4"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
+        >
+          Uma parceria do Conhecimento disruptivo com os Mapas Fantásticos
+        </motion.p>
+        
         {/* Loading indicator */}
         <motion.div
           className="mt-12 flex justify-center"

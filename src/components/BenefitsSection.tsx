@@ -39,6 +39,7 @@ const features = [
 const BenefitsSection = () => {
   return (
     <section 
+      id="curso"
       className="relative py-16 md:py-32 text-white"
       style={{
         background: "linear-gradient(135deg, #0a0613 0%, #150d27 100%)",

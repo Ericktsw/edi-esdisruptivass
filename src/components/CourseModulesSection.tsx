@@ -162,7 +162,7 @@ const CourseModulesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="modulos" className="py-20 px-4 bg-white">
       <div className="container mx-auto">
 
 
@@ -177,7 +177,7 @@ const CourseModulesSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-gray-800 leading-tight">
-            Veja como é <span className="text-gradient bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">dentro do curso</span>
+            Veja como é <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-bold">dentro do curso</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 mb-16 font-medium max-w-3xl mx-auto">
             Explore os módulos do curso de forma interativa e descubra todo o conteúdo exclusivo

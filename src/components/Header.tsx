@@ -57,8 +57,8 @@ const Header = () => {
             transition={{ delay: 0.5, duration: 0.4 }}
             className="hidden md:block"
           >
-            <Button className="gradient-primary hover:glow-primary transition-smooth">
-              COMPRAR AGORA
+            <Button asChild className="gradient-primary hover:glow-primary transition-smooth">
+              <a href="#precos">COMPRAR AGORA</a>
             </Button>
           </motion.div>
 
@@ -94,8 +94,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="gradient-primary mt-4 w-full">
-                COMPRAR AGORA
+              <Button asChild className="gradient-primary mt-4 w-full">
+                <a href="#precos">COMPRAR AGORA</a>
               </Button>
             </div>
           </motion.nav>
