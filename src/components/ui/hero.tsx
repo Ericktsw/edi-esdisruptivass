@@ -15,7 +15,7 @@ export default function Globe3D() {
     >
       {/* Hacker Misterioso Background */}
       <div 
-        className="absolute inset-0 opacity-80 mix-blend-overlay pointer-events-none"
+        className="absolute inset-0 opacity-90 mix-blend-overlay pointer-events-none"
         style={{
           backgroundImage: `url('/hacker-misterioso.png')`,
           backgroundSize: 'cover',
@@ -42,7 +42,7 @@ export default function Globe3D() {
       />
       
       {/* Dark overlay to maintain readability */}
-      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
       <div className="container relative z-10 mx-auto max-w-2xl px-4 text-center md:max-w-4xl md:px-6 lg:max-w-7xl">
         <motion.div
