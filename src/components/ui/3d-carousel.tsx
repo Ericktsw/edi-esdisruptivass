@@ -146,13 +146,16 @@ export function Carousel3D({
                   transformStyle: "preserve-3d",
                 }}
               >
-                <div className="w-64 h-80 bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                <div className="w-64 h-80 bg-white/20 backdrop-blur-md rounded-xl shadow-2xl overflow-hidden border border-white/30 hover:bg-white/30 hover:border-white/50 hover:shadow-3xl transition-all duration-500 group">
                   <div className="relative h-full overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-contain transition-transform duration-300 hover:scale-110"
+                      className="w-full h-full object-contain transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                     />
+                    {/* Glass reflection overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                    <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   </div>
                 </div>
               </motion.div>
