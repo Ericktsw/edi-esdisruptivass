@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Demo } from "@/components/ui/demo";
 import PartnersSection from "@/components/PartnersSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import YouTubeSection from "@/components/YouTubeSection";
 import CourseModulesSection from "@/components/CourseModulesSection";
 import GeoLayersSection from "@/components/GeoLayersSection";
 import VideoShowcaseSection from "@/components/VideoShowcaseSection";
@@ -35,6 +36,7 @@ const Index = () => {
             <div className="bg-white">
               <BenefitsSection />
             </div>
+            <YouTubeSection />
             <div className="bg-white">
               <CourseModulesSection />
             </div>
