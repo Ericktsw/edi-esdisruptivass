@@ -15,16 +15,6 @@ const YouTubeSection = () => {
             className="space-y-8 lg:order-1 order-1"
           >
             <div className="space-y-4">
-              <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="inline-block px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-sm font-medium"
-              >
-                MÓDULO EXCLUSIVO
-              </motion.span>
-              
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -143,7 +133,15 @@ const YouTubeSection = () => {
               viewport={{ once: true }}
               className="pt-6"
             >
-              <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={() => {
+                  const priceSection = document.getElementById('precos');
+                  if (priceSection) {
+                    priceSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
                 Acessar Módulo YouTube
               </button>
             </motion.div>
