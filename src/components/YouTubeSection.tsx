@@ -22,11 +22,11 @@ const YouTubeSection = () => {
                 viewport={{ once: true }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
               >
-                Canal de{" "}
+                Técnicas de{" "}
                 <span className="text-gradient bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  Milhões
+                  Edição
                 </span>{" "}
-                sem Aparecer
+                Disruptiva
               </motion.h2>
               
               <motion.p
@@ -36,9 +36,9 @@ const YouTubeSection = () => {
                 viewport={{ once: true }}
                 className="text-xl text-gray-300 leading-relaxed"
               >
-                Descubra como criar um canal de milhões de inscritos sem aparecer, mesmo sem experiência. Aprenda as estratégias dos maiores canais{" "}
-                <span className="text-purple-400 font-semibold">backstage</span>{" "}
-                do YouTube.
+                Aprenda as técnicas de edição que alavancaram o canal{" "}
+                <span className="text-purple-400 font-semibold">Conhecimento Disruptivo</span>{" "}
+                para outro patamar no YouTube. Domine os segredos por trás dos vídeos que conquistaram milhões de visualizações.
               </motion.p>
             </div>
 
@@ -82,24 +82,24 @@ const YouTubeSection = () => {
             >
               {[
                 {
-                  icon: Users,
-                  title: "Sem Experiência",
-                  description: "Mesmo sem conhecimento prévio"
-                },
-                {
-                  icon: BookOpen,
-                  title: "Do Zero ao Topo",
-                  description: "Passo a passo completo"
-                },
-                {
                   icon: Play,
-                  title: "70+ Videoaulas",
-                  description: "Conteúdo completo e detalhado"
+                  title: "Técnicas Exclusivas",
+                  description: "Métodos únicos de edição"
                 },
                 {
                   icon: TrendingUp,
-                  title: "Básico ao Avançado",
-                  description: "Estratégias comprovadas"
+                  title: "Resultados Comprovados",
+                  description: "Milhões de visualizações"
+                },
+                {
+                  icon: BookOpen,
+                  title: "Segredos Revelados",
+                  description: "Por trás dos sucessos"
+                },
+                {
+                  icon: Users,
+                  title: "Edição Disruptiva",
+                  description: "Quebre os padrões tradicionais"
                 }
               ].map((feature, index) => (
                 <motion.div
@@ -142,7 +142,7 @@ const YouTubeSection = () => {
                 }}
                 className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                Acessar Módulo YouTube
+                Dominar Técnicas Disruptivas
               </button>
             </motion.div>
           </motion.div>
