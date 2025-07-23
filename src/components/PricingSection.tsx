@@ -20,8 +20,7 @@ const PricingSection = () => {
         { text: "3D Avançado", included: false },
         { text: "Element 3D", included: false },
         { text: "Animações Avançadas", included: false },
-        { text: "Módulo de Mapas Animados", included: false },
-        { text: "Comunidade Secreta", included: false }
+        { text: "Módulo de Mapas Animados", included: false }
       ],
       bonuses: []
     },
@@ -41,7 +40,6 @@ const PricingSection = () => {
         { text: "Instalando Programas", included: true },
         { text: "Animações do ZERO!", included: true },
         { text: "Sua primeira animação", included: true },
-        { text: "Comunidade secreta de suporte e interação", included: false },
         { text: "Acesso Vitalício", included: true },
         { text: "Módulo de Mapas Animados", included: false }
       ],
@@ -67,7 +65,6 @@ const PricingSection = () => {
         { text: "Animações do ZERO!", included: true },
         { text: "Sua primeira animação", included: true },
         { text: "Módulo de Mapas Animados", included: true },
-        { text: "Comunidade secreta de suporte e interação", included: true },
         { text: "Acesso Vitalício", included: true }
       ],
       bonuses: [
