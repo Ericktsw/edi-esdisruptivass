@@ -6,7 +6,7 @@ import { Check, X, Star, ArrowRight, CreditCard, Shield } from "lucide-react";
 const PricingSection = () => {
   const plans = [
     {
-      name: "PLANO BÁSICO",
+      name: "EDIÇÕES DISRUPTIVAS - BÁSICO",
       price: "R$ 97,00",
       description: "ou 6x de R$ 16,17",
       popular: false,
@@ -25,7 +25,31 @@ const PricingSection = () => {
       bonuses: []
     },
     {
-      name: "PLANO AVANÇADO",
+      name: "EDIÇÕES DISRUPTIVAS - ESSENCIAL",
+      price: "R$ 197,00",
+      description: "ou 10x de R$ 19,70",
+      popular: false,
+      features: [
+        { text: "Aprenda a editar do Básico ao Avançado", included: true },
+        { text: "3D Avançado", included: true },
+        { text: "Element 3D – Transformando Objetos em 3D", included: true },
+        { text: "Editando Vídeo Oficial do Canal", included: true },
+        { text: "Editando Na Prática", included: true },
+        { text: "Certificado de Conclusão", included: true },
+        { text: "Instalando Programas", included: true },
+        { text: "Animações do ZERO!", included: true },
+        { text: "Sua primeira animação", included: true },
+        { text: "Comunidade secreta de suporte e interação", included: false },
+        { text: "Acesso Vitalício", included: true },
+        { text: "Módulo de Mapas Animados", included: false }
+      ],
+      bonuses: [
+        { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
+        { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" }
+      ]
+    },
+    {
+      name: "EDIÇÕES DISRUPTIVAS - PRO",
       price: "R$ 297,00",
       description: "ou 12x de R$ 24,75",
       popular: false,
@@ -47,30 +71,6 @@ const PricingSection = () => {
         { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
         { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" },
         { text: "BÔNUS: SUPORTE PRIORITÁRIO" }
-      ]
-    },
-    {
-      name: "PLANO INTERMEDIÁRIO",
-      price: "R$ 197,00",
-      description: "ou 10x de R$ 19,70",
-      popular: false,
-      features: [
-        { text: "Aprenda a editar do Básico ao Avançado", included: true },
-        { text: "3D Avançado", included: true },
-        { text: "Element 3D – Transformando Objetos em 3D", included: true },
-        { text: "Editando Vídeo Oficial do Canal", included: true },
-        { text: "Editando Na Prática", included: true },
-        { text: "Certificado de Conclusão", included: true },
-        { text: "Instalando Programas", included: true },
-        { text: "Animações do ZERO!", included: true },
-        { text: "Sua primeira animação", included: true },
-        { text: "Comunidade secreta de suporte e interação", included: false },
-        { text: "Acesso Vitalício", included: true },
-        { text: "Módulo de Mapas Animados", included: false }
-      ],
-      bonuses: [
-        { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
-        { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" }
       ]
     }
   ];
@@ -185,7 +185,7 @@ const PricingSection = () => {
                        variant="default"
                      >
                        <span className="text-center leading-tight">
-                         ESCOLHER PLANO<br />POR {plan.price.replace('R$ ', '').replace(',00', '')} REAIS
+                         COMECE AGORA<br />POR {plan.price.replace('R$ ', '').replace(',00', '')} REAIS
                        </span>
                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                      </Button>
