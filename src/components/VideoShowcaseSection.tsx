@@ -78,8 +78,7 @@ const VideoShowcaseSection = () => {
             viewport={{ once: true }}
             className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            Estes são alguns dos vídeos que já editei aplicando as técnicas ensinadas no curso.
-            Cada um demonstra o poder das edições disruptivas em ação.
+            Estes são alguns dos vídeos criados usando as técnicas ensinadas no curso.
           </motion.p>
         </motion.div>
 
