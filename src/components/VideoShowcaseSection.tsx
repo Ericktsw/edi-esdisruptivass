@@ -66,7 +66,7 @@ const VideoShowcaseSection = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
             Veja os Resultados{" "}
-            <span className="bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
               Impressionantes
             </span>
           </motion.h2>
