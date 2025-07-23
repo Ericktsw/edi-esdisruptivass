@@ -39,7 +39,7 @@ const HeroSection = () => {
             que Impressionam
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-white/60 md:text-xl">
-            Aprenda a criar edições de outro nível e descubra como faturar até R$5.000 por mês trabalhando de casa com vídeos que impressionam!
+            Aprenda a criar edições de outro nível e fature trabalhando de casa com vídeos que impressionam!
           </p>
 
           <div className="mb-10 sm:mb-0 flex flex-col items-center justify-center gap-4 sm:flex-row">
