@@ -47,9 +47,7 @@ const GeoLayersSection = () => {
                 viewport={{ once: true }}
                 className="text-xl text-gray-300 leading-relaxed"
               >
-                Aprenda a criar mapas animados profissionais com o plugin{" "}
-                <span className="text-purple-400 font-semibold">GeoLayers 3</span>,
-                uma ferramenta poderosa para edições geográficas impressionantes.
+                Aprenda como criar animações que viralizam nas redes socias e me fizeram alcançar milhões de seguidores apenas no Instagram.
               </motion.p>
             </div>
 
@@ -63,15 +61,15 @@ const GeoLayersSection = () => {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src="/geolayers.png?v=2"
+                  src="/geolayers-corrigida.png"
                   alt="GeoLayers 3 - Edições de Mapas Animados"
                   className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
-                    console.error('Erro ao carregar imagem geolayers.png (mobile):', e);
+                    console.error('Erro ao carregar imagem geolayers-corrigida.png (mobile):', e);
                     console.log('Tentando carregar imagem de:', e.currentTarget.src);
                     // Não esconder a imagem, apenas logar o erro
                   }}
-                  onLoad={() => console.log('Imagem geolayers.png (mobile) carregada com sucesso')}
+                  onLoad={() => console.log('Imagem geolayers-corrigida.png (mobile) carregada com sucesso')}
                   loading="lazy"
                 />
                 
@@ -166,15 +164,15 @@ const GeoLayersSection = () => {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="/geolayers.png?v=2"
+                src="/geolayers-corrigida.png"
                 alt="GeoLayers 3 - Edições de Mapas Animados"
                 className="w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500"
                 onError={(e) => {
-                  console.error('Erro ao carregar imagem geolayers.png:', e);
+                  console.error('Erro ao carregar imagem geolayers-corrigida.png:', e);
                   console.log('Tentando carregar imagem de:', e.currentTarget.src);
                   // Não esconder a imagem, apenas logar o erro
                 }}
-                onLoad={() => console.log('Imagem geolayers.png carregada com sucesso')}
+                onLoad={() => console.log('Imagem geolayers-corrigida.png carregada com sucesso')}
                 loading="lazy"
               />
               
