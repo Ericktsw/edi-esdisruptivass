@@ -185,8 +185,8 @@ const PricingSection = () => {
                        variant="default"
                      >
                        <span className="text-center leading-tight">
-                         COMECE AGORA<br />POR {plan.price.replace('R$ ', '').replace(',00', '')} REAIS
-                       </span>
+                          COMECE AGORA
+                        </span>
                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                      </Button>
                    </motion.div>
