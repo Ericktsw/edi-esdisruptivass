@@ -68,7 +68,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
         >
-          Uma parceria do Conhecimento disruptivo com os Mapas Fantásticos
+          Uma parceria entre Conhecimento Disruptivo & Mapas Fantásticos
         </motion.p>
         
         {/* Loading indicator */}
