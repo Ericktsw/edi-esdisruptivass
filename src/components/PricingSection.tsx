@@ -10,6 +10,7 @@ const PricingSection = () => {
       price: "R$ 97,00",
       description: "ou 6x de R$ 16,17",
       popular: false,
+      paymentLink: "#",
       features: [
         { text: "Aprenda a editar do Básico", included: true },
         { text: "Editando Na Prática", included: true },
@@ -29,6 +30,7 @@ const PricingSection = () => {
       price: "R$ 197,00",
       description: "ou 10x de R$ 19,70",
       popular: false,
+      paymentLink: "https://pay.kiwify.com.br/cdhD06j",
       features: [
         { text: "Aprenda a editar do Básico ao Avançado", included: true },
         { text: "3D Avançado", included: true },
@@ -53,6 +55,7 @@ const PricingSection = () => {
       price: "R$ 297,00",
       description: "ou 12x de R$ 24,75",
       popular: false,
+      paymentLink: "https://pay.kiwify.com.br/mkqmAJs",
       features: [
         { text: "Aprenda a editar do Básico ao Avançado", included: true },
         { text: "3D Avançado", included: true },
@@ -183,10 +186,11 @@ const PricingSection = () => {
                      <Button 
                        className="w-full gradient-primary hover:glow-primary transition-smooth group text-sm px-4 py-3 h-auto min-h-[3rem]"
                        variant="default"
+                       onClick={() => window.open(plan.paymentLink, '_blank')}
                      >
                        <span className="text-center leading-tight">
                           COMECE AGORA
-                        </span>
+                         </span>
                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                      </Button>
                    </motion.div>
