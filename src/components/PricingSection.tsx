@@ -25,30 +25,6 @@ const PricingSection = () => {
       bonuses: []
     },
     {
-      name: "PLANO INTERMEDIÁRIO",
-      price: "R$ 197,00",
-      description: "ou 10x de R$ 19,70",
-      popular: true,
-      features: [
-        { text: "Aprenda a editar do Básico ao Avançado", included: true },
-        { text: "3D Avançado", included: true },
-        { text: "Element 3D – Transformando Objetos em 3D", included: true },
-        { text: "Editando Vídeo Oficial do Canal", included: true },
-        { text: "Editando Na Prática", included: true },
-        { text: "Certificado de Conclusão", included: true },
-        { text: "Instalando Programas", included: true },
-        { text: "Animações do ZERO!", included: true },
-        { text: "Sua primeira animação", included: true },
-        { text: "Comunidade secreta de suporte e interação", included: true },
-        { text: "Acesso Vitalício", included: true },
-        { text: "Módulo de Mapas Animados", included: false }
-      ],
-      bonuses: [
-        { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
-        { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" }
-      ]
-    },
-    {
       name: "PLANO AVANÇADO",
       price: "R$ 297,00",
       description: "ou 12x de R$ 24,75",
@@ -70,8 +46,31 @@ const PricingSection = () => {
       bonuses: [
         { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
         { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" },
-        { text: "BÔNUS: SUPORTE PRIORITÁRIO" },
-        { text: "BÔNUS: TEMPLATES EXCLUSIVOS" }
+        { text: "BÔNUS: SUPORTE PRIORITÁRIO" }
+      ]
+    },
+    {
+      name: "PLANO INTERMEDIÁRIO",
+      price: "R$ 197,00",
+      description: "ou 10x de R$ 19,70",
+      popular: false,
+      features: [
+        { text: "Aprenda a editar do Básico ao Avançado", included: true },
+        { text: "3D Avançado", included: true },
+        { text: "Element 3D – Transformando Objetos em 3D", included: true },
+        { text: "Editando Vídeo Oficial do Canal", included: true },
+        { text: "Editando Na Prática", included: true },
+        { text: "Certificado de Conclusão", included: true },
+        { text: "Instalando Programas", included: true },
+        { text: "Animações do ZERO!", included: true },
+        { text: "Sua primeira animação", included: true },
+        { text: "Comunidade secreta de suporte e interação", included: false },
+        { text: "Acesso Vitalício", included: true },
+        { text: "Módulo de Mapas Animados", included: false }
+      ],
+      bonuses: [
+        { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
+        { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" }
       ]
     }
   ];
@@ -125,34 +124,9 @@ const PricingSection = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              {plan.popular && (
-                <motion.div
-                  initial={{ scale: 0, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.5 + planIndex * 0.2, type: "spring", stiffness: 300 }}
-                  viewport={{ once: true }}
-                  className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10"
-                >
-                  <div className="gradient-primary text-white px-6 py-2 rounded-full text-sm font-bold">
-                    MAIS POPULAR
-                  </div>
-                </motion.div>
-              )}
 
-              <Card className={`p-6 h-full bg-black/10 backdrop-blur-sm border-white/20 transition-smooth relative overflow-hidden ${
-                plan.popular ? 'border-purple-500/50 shadow-lg shadow-purple-500/20' : ''
-              }`}>
-                
-                {plan.popular && (
-                  <motion.div
-                    animate={{ 
-                      scale: [1, 1.2, 1],
-                      opacity: [0.1, 0.3, 0.1]
-                    }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="absolute inset-0 bg-white/5"
-                  />
-                )}
+
+              <Card className="p-6 h-full bg-black/10 backdrop-blur-sm border-white/20 transition-smooth relative overflow-hidden">
 
                 <div className="relative z-10">
                   {/* Header */}
@@ -207,11 +181,7 @@ const PricingSection = () => {
                      whileTap={{ scale: 0.95 }}
                    >
                      <Button 
-                       className={`w-full transition-smooth group text-sm px-4 py-3 h-auto min-h-[3rem] ${
-                         plan.popular 
-                           ? 'gradient-primary hover:glow-primary' 
-                           : 'bg-white/10 hover:bg-white/20 border border-white/20'
-                       }`}
+                       className="w-full gradient-primary hover:glow-primary transition-smooth group text-sm px-4 py-3 h-auto min-h-[3rem]"
                        variant="default"
                      >
                        <span className="text-center leading-tight">
