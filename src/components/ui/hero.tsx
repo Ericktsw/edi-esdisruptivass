@@ -69,7 +69,7 @@ export default function Globe3D() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.3, ease: "easeOut" }}
           >
-            {"Aprenda a criar edições de outro nível e descubra como faturar trabalhando de casa com vídeos que impressionam!".split(" ").map((word, index) => (
+            {"Aprenda a criar edições de outro nível e fature trabalhando de casa com vídeos que impressionam!".split(" ").map((word, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0 }}
