@@ -45,7 +45,7 @@ const PricingSection = () => {
         { text: "Instalando Programas", included: true },
         { text: "Animações do ZERO!", included: true },
         { text: "Sua primeira animação", included: true },
-        { text: "Módulo de Mapas Animados", included: true },
+        { text: "Módulo de Mapas Animados", included: false },
         { text: "Acesso Vitalício", included: true }
       ],
       bonuses: [
@@ -78,9 +78,7 @@ const PricingSection = () => {
       bonuses: [
         { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
         { text: "BÔNUS: FINALIZAÇÃO NO PREMIERE" },
-        { text: "BÔNUS: SUPORTE PRIORITÁRIO" },
-        { text: "BÔNUS: PACK PREMIUM DE TEMPLATES" },
-        { text: "BÔNUS: ACESSO EXCLUSIVO A WEBINARS" }
+        { text: "BÔNUS: SUPORTE PRIORITÁRIO" }
       ]
     }
   ];
