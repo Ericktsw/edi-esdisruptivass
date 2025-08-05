@@ -71,9 +71,7 @@ const PricingSection = () => {
         { text: "Animações do ZERO!", included: true },
         { text: "Sua primeira animação", included: true },
         { text: "Módulo de Mapas Animados", included: true },
-        { text: "Acesso Vitalício", included: true },
-        { text: "Mentoria Individual 1:1", included: true },
-        { text: "Revisão de Projetos", included: true }
+        { text: "Acesso Vitalício", included: true }
       ],
       bonuses: [
         { text: "BÔNUS: COMO TER UM CANAL DARK-YOUTUBE" },
